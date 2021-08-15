@@ -23,7 +23,7 @@ namespace EntityAsp
                 var sorgu = from x in db.Tbl_Admin where x.Kullanici == TxtKullaniciAd.Text && x.Sifre == TxtSifre.Text select x;
                 if (sorgu.Any())
                 {
-                    Response.Redirect("/Kategoriler/Kategoriler.Aspx");
+                    Response.Redirect("/Kategori/Kategoriler.aspx");
                 }
                 else
                 {
